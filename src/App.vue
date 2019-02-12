@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
+      <div id="app">
+        <h1>Data visualisation with Vue.js</h1> 
+        <visualisation></visualisation>
+      </div>
+    </template>
+    <script>
+    /* eslint-disable */
+    import Visualisation from './components/Visualisation.vue';
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+    export default {
+      name: 'app',
+      components: {
+        Visualisation
+      }
+    }
+    </script>
+    <style>
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    #app {
+      font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 60px;
+    }
+    </style>
